@@ -5,7 +5,7 @@ Postgres HTTP health check endpoint for Consul wirtten in Python.
 ## Usage
 
 ```
-./pghealthcheck.py [-h] -U USER [-P PASSWORD] -H HOST [-p PORT] [-w WSPORT]
+./pg_healthcheck.py [-h] -U USER [-P PASSWORD] -H HOST [-p PORT] [-w WSPORT]
 ```
 
 Arguments:
