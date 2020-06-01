@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 LABEL maintainer="Ary Kleinerman"
 RUN apk update && apk upgrade && \
-    apk add --virtual .build-deps --no-cache gcc musl-dev postgresql-dev && \
+    apk add --virtual .build-deps --no-cache gcc musl-dev make file libffi-dev postgresql-dev && \
     pip install --upgrade pip && \
     pip install --no-cache-dir Flask && \
     pip install --no-cache-dir gevent && \
